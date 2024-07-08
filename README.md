@@ -2,3 +2,26 @@
 
 
 # Projeto de mobilidade urbana (Senac)
+
+Tabela de conteúdos
+--------------------
+
+*[Sobre](#sobre)
+*[Pré-requisitos](#Pré-requisitos)
+*[compilando](#compilando)
+*[tecnologias](#tecnologias)
+
+pré-requisitos
+--------------
+comando para executar aplicação
+
+compilando
+----------------
+compilando programa em Java
+```Bach
+$ javac Programa.java
+
+executando a aplicação 
+----------------------
+rodando em java
+ 
