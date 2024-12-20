@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tuc</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tuc Tuc</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Pagina principal</a></li>
+                <li><a href="src/cadastrar_colaborador.html">Cadastrar colaborador</a></li>
+                <li><a href="src/cadastro_cliente.html">Cadastrar cliente</a></li>
+                <li><a href="src/forma_pagamento.html">Formas de pagamento</a></li>
+                <li><a href="src/servico.html">Selecionar servico</a></li>
+                <li><a href="src/veiculo.html">Cadastrar veiculo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="pagina-principal">
+        <section class="hero">
+            <h1>Viaje com Conforto e Segurança</h1>
+            <p>Escolha o destino e nós cuidamos do resto.</p>
+            <button class="btn-primary">Começar</button>
+        </section>
+
+        <!-- Mapa interativo -->
+        <section id="map-section">
+            <h2>Mapa Interativo</h2>
+            <div id="map-placeholder" style="height: 400px;"></div>
+        </section>
+
+        <!-- Selecao de ponto de partida/destino -->
+        <section id="ride-form">
+            <h2>Solicite sua Viagem</h2>
+            <form id="rideRequestForm">
+                <label for="pickup">
+                    Ponto de Partida:
+                    <div class="input-container">
+                        <input type="text" id="pickup" placeholder="Digite o local">
+                        <div class="icon-container">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="pe-location-fetch css-bOZeEP" role="button" tabindex="0">
+                                <title>Navigate right up</title>
+                                <path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label for="destination">
+                    Destino:
+                    <div class="input-container">
+                        <input type="text" id="destination" placeholder="Digite o destino">
+                        <div class="icon-container">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="pe-location-fetch css-bOZeEP" role="button" tabindex="0">
+                                <title>Navigate right up</title>
+                                <path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <button type="submit" class="btn-primary">Calcular Rota</button>
+                <button type="button" id="limparCampos" class="btn-secondary">Limpar Seleção</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyRide. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/map.js"></script>
+    <script src="js/index_script.js"></script>
+</body>
+
+</html>

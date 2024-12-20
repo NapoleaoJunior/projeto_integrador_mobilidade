@@ -1,0 +1,2 @@
+antonio,123.456.789-12,(61)99999-9999,teste@gmail.com,null,1234,null,nullnapoleao,002.154.557-55,(61)54489-7556,napoleao@gmail.com,null,123456,null,null
+napoleao,012.456.545-56,(61)25487-9522,napoleao@gmail.com,null,123456,null,null

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tuc</title>
+    <link rel="stylesheet" href="../css/servico.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tuc Tuc</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Pagina principal</a></li>
+                <li><a href="cadastrar_colaborador.html">Cadastrar colaborador</a></li>
+                <li><a href="cadastro_cliente.html">Cadastrar cliente</a></li>
+                <li><a href="forma_pagamento.html">Formas de pagamento</a></li>
+                <li><a href="servico.html">Selecionar servico</a></li>
+                <li><a href="veiculo.html">Cadastrar veiculo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- cadastrar servico -->
+    <div class="container-fluid mt-3">
+        <h2>Cadastro de Serviço</h2>
+        <hr>
+        <form>
+            <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo de serviço</label>
+                <input type="text" class="form-control" id="tipo" placeholder="tipo...">
+            </div>
+
+            <div class="mb-3">
+                <label for="data" class="form-label">Data do serviço</label>
+                <input type="text" class="form-control" id="data" placeholder="data...">
+            </div>
+
+            <div class="mb-3">
+                <label for="valorServico" class="form-label">Valor do serviço</label>
+                <input type="text" class="form-control" id="valorServico" placeholder="valorServico...">
+            </div>
+
+            <div class="mb-3">
+                <label for="descricao" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descricao" placeholder="descricao...">
+            </div>
+
+            <div class="mb-3">
+                <label for="horarioInicial" class="form-label">Horário inicial do serviço</label>
+                <input type="text" class="form-control" id="horarioInicial" placeholder="horarioInicial...">
+            </div>
+
+            <div class="mb-3">
+                <label for="horarioFim" class="form-label">Horário do fim do serviço</label>
+                <input type="text" class="form-control" id="horarioFim" placeholder="horarioFim...">
+            </div>
+
+            <div class="mb-3">
+                <label for="status" class="form-label">Status do serviço</label>
+                <input type="text" class="form-control" id="status" placeholder="status...">
+            </div>
+
+            <div class="mb-3">
+                <label for="idVeiculo" class="form-label">ID do veículo</label>
+                <input type="text" class="form-control" id="idVeiculo" placeholder="idVeiculo...">
+            </div>
+
+            <div class="mb-3">
+                <label for="idColaborador" class="form-label">ID do colaborador</label>
+                <input type="text" class="form-control" id="idColaborador" placeholder="idColaborador...">
+            </div>
+
+            <div class="mb-3">
+                <label for="idCliente" class="form-label">ID do cliente</label>
+                <input type="text" class="form-control" id="idCliente" placeholder="idCliente...">
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="servico()">Cadastrar</button>
+            <button type="button" class="btn btn-secondary">Voltar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MyRide. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/servico.js"></script>
+    <script src="js/index_script.js"></script>
+</body>
+
+</html>
