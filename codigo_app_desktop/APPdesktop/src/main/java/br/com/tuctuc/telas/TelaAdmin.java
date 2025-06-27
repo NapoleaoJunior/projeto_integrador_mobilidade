@@ -1212,7 +1212,7 @@ public class TelaAdmin extends javax.swing.JInternalFrame {
             }
         } else {
             JOptionPane.showMessageDialog(this,
-                    "Se esse erro apareceyu, e pq nada para pesquisar, ou deu erro: ");
+                    "Se esse erro apareceu, e pq nada para pesquisar, ou deu erro: ");
         }
     }//GEN-LAST:event_jButton17ActionPerformed
 
